@@ -2,6 +2,7 @@ import folium
 from flask import Flask
 from math import radians, sin, cos, sqrt, atan2
 
+
 app = Flask(__name__)
 app.debug = True
 
@@ -31,6 +32,17 @@ def km_to_minutes(distance):
 
     return time_minutes
 
+def create_marker(coord, name, url=None, color=None):
+    if color:
+        icon = folium.Icon(color=color)
+        marker = folium.Marker(location=coord, tooltip=name, icon=icon)
+    else:
+        marker = folium.Marker(location=coord, tooltip=name)
+    if url:
+        popup = f'<a href="{url}" target="_blank">{name}</a>'
+        marker.add_child(folium.Popup(popup))
+    return marker
+
 @app.route("/map")
 def display_map():
     mapObj = folium.Map(location=[37.7797807,-122.4329079], zoom_start=15)
@@ -46,8 +58,9 @@ def display_map():
         (37.7820461,-122.4491252, 'Shopping', "https://www.google.com/maps?sca_esv=09421e5d5db007db&output=search&q=city+center+shopping+mall&source=lnms&entry=mc&ved=1t:200715&ictx=111" ),
         (37.7738489,-122.4526904, 'Food', 'https://www.tripadvisor.com/Restaurants-g60713-zfn7222620-San_Francisco_California.html'),
         (37.7703713,-122.4483282, 'Outdoors', 'https://sfrecpark.org/facilities/facility/details/Buena-Vista-Park-155' ),
+        (37.7690194,-122.4572928, 'Shooping', 'https://www.sfjapantown.org/japan-center-malls/'),
+        (37.7726187,-122.4602558, 'Outdoors', 'https://sfrecpark.org/770/Golden-Gate-Park')
     ]   
-
     walkable_marker_coordinates = [
         (37.776360, -122.449898, 'University of San Francisco'),
         (37.775145,-122.4539253, 'St. Mary Helath Clinic'),
@@ -56,13 +69,18 @@ def display_map():
         (37.7820461,-122.4491252, 'City Center'),
         (37.7738489,-122.4526904, 'Haight-Ashbury'),
         (37.7703713,-122.4483282, 'Buena Vista Park'),
+        (37.7690194,-122.4572928, 'Japan Town'),
+        (37.7726187,-122.4602558, 'Golden Gate Park')
     ]   
     sf_coords = (37.776360, -122.449898)
   
-    for coords in marker_coordinates:
-        folium.Marker(location= [coords[0], coords[1]], tooltip=coords[2], 
-                       popup=f'<a href="{coords[3]}" target="_blank">{coords[2]}</a>').add_to(mapObj)
     
+    for coords in marker_coordinates:
+        if coords[2] == 'University of San Francisco':
+            create_marker(coords[:2], coords[2], coords[3], color='green').add_to(mapObj)
+        else:
+            create_marker(coords[:2], coords[2], coords[3]).add_to(mapObj)
+
     for i in range(len(walkable_marker_coordinates)):
         coords = walkable_marker_coordinates[i][:2]
         distance = calculate_distance(sf_coords, coords[:2])

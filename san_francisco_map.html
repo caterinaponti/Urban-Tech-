@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_6b66e9bbc752ca47e11b3cbb7dc86767 {
+                #map_76141880966f9e5cf3132b5eaf5897ae {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_6b66e9bbc752ca47e11b3cbb7dc86767" ></div>
+            <div class="folium-map" id="map_76141880966f9e5cf3132b5eaf5897ae" ></div>
         
 </body>
 <script>
     
     
-            var map_6b66e9bbc752ca47e11b3cbb7dc86767 = L.map(
-                "map_6b66e9bbc752ca47e11b3cbb7dc86767",
+            var map_76141880966f9e5cf3132b5eaf5897ae = L.map(
+                "map_76141880966f9e5cf3132b5eaf5897ae",
                 {
                     center: [37.7797807, -122.4329079],
                     crs: L.CRS.EPSG3857,
@@ -60,37 +60,28 @@
 
         
     
-            var tile_layer_9e97bc01aaaf456b02743e83c3c21c9c = L.tileLayer(
+            var tile_layer_eda56253a14781eb96512c3cad38a32e = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_9e97bc01aaaf456b02743e83c3c21c9c.addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+            tile_layer_eda56253a14781eb96512c3cad38a32e.addTo(map_76141880966f9e5cf3132b5eaf5897ae);
         
     
-            var marker_74dd85c98d0c1601d4cfd45cf5f8b3bf = L.marker(
+            var marker_e8e38733ccc10c08fe5da3da96138d19 = L.marker(
                 [37.77636, -122.449898],
                 {}
-            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
         
     
-        var popup_0e6eea76498409b042eb59c0059c99de = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_e5a99b51136358c3d6e4876802982625 = $(`<div id="html_e5a99b51136358c3d6e4876802982625" style="width: 100.0%; height: 100.0%;"><a href="https://www.usfca.edu" target="_blank">University of San Francisco</a></div>`)[0];
-                popup_0e6eea76498409b042eb59c0059c99de.setContent(html_e5a99b51136358c3d6e4876802982625);
-            
-        
-
-        marker_74dd85c98d0c1601d4cfd45cf5f8b3bf.bindPopup(popup_0e6eea76498409b042eb59c0059c99de)
-        ;
-
+            var icon_637d488166308740353207accc8770b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e8e38733ccc10c08fe5da3da96138d19.setIcon(icon_637d488166308740353207accc8770b4);
         
     
-    
-            marker_74dd85c98d0c1601d4cfd45cf5f8b3bf.bindTooltip(
+            marker_e8e38733ccc10c08fe5da3da96138d19.bindTooltip(
                 `<div>
                      University of San Francisco
                  </div>`,
@@ -98,28 +89,28 @@
             );
         
     
-            var marker_36eca15c19d6a404aa28e8c43488889e = L.marker(
-                [37.74287, -122.47645],
-                {}
-            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
-        
-    
-        var popup_a561e9f894402fa9468f052e7f70cfff = L.popup({"maxWidth": "100%"});
+        var popup_31d3f3a407a2371a6280928758e0bdd0 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_35cb30eed4bbea2f20c011d49c47217f = $(`<div id="html_35cb30eed4bbea2f20c011d49c47217f" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/37.7683968,-122.4572928/Titan+Junk+Removal+Inc.,+945+Taraval+St+Suite+1081,+San+Francisco,+CA+94116/@37.7556169,-122.4882594,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2c22379db5e7c6dd:0xfea1e1472b35cebd!2m2!1d-122.4764775!2d37.7428405?entry=ttu" target="_blank">Waste</a></div>`)[0];
-                popup_a561e9f894402fa9468f052e7f70cfff.setContent(html_35cb30eed4bbea2f20c011d49c47217f);
+                var html_fe95b1ec7ea53c3635f46a6cdbf706a2 = $(`<div id="html_fe95b1ec7ea53c3635f46a6cdbf706a2" style="width: 100.0%; height: 100.0%;"><a href="https://www.usfca.edu" target="_blank">University of San Francisco</a></div>`)[0];
+                popup_31d3f3a407a2371a6280928758e0bdd0.setContent(html_fe95b1ec7ea53c3635f46a6cdbf706a2);
             
         
 
-        marker_36eca15c19d6a404aa28e8c43488889e.bindPopup(popup_a561e9f894402fa9468f052e7f70cfff)
+        marker_e8e38733ccc10c08fe5da3da96138d19.bindPopup(popup_31d3f3a407a2371a6280928758e0bdd0)
         ;
 
         
     
     
-            marker_36eca15c19d6a404aa28e8c43488889e.bindTooltip(
+            var marker_b1765b56c8cd8517c041ddc6eae3db6b = L.marker(
+                [37.74287, -122.47645],
+                {}
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
+        
+    
+            marker_b1765b56c8cd8517c041ddc6eae3db6b.bindTooltip(
                 `<div>
                      Waste
                  </div>`,
@@ -127,28 +118,28 @@
             );
         
     
-            var marker_6e88573c0a5d6946e1be3949be896b7c = L.marker(
-                [37.80443, -122.41337],
-                {}
-            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
-        
-    
-        var popup_2d1b07f0ddc5c2c0c9830fd976e0b9e5 = L.popup({"maxWidth": "100%"});
+        var popup_db3df8f3fd63bb78658c624334ff8237 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_ddd0e6c100a103fdf2c8122485fcd92c = $(`<div id="html_ddd0e6c100a103fdf2c8122485fcd92c" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/place/San+Francisco+Water+Department/@37.7810731,-122.4218213,17z/data=!3m1!4b1!4m6!3m5!1s0x808f7f00c18d6df7:0xaf9b1f7f76595df6!8m2!3d37.7810731!4d-122.4192464!16s%2Fg%2F1tjmdw_z?entry=ttu" target="_blank">Water</a></div>`)[0];
-                popup_2d1b07f0ddc5c2c0c9830fd976e0b9e5.setContent(html_ddd0e6c100a103fdf2c8122485fcd92c);
+                var html_ab8b668346d57ead6764cb9ef4594a7c = $(`<div id="html_ab8b668346d57ead6764cb9ef4594a7c" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/37.7683968,-122.4572928/Titan+Junk+Removal+Inc.,+945+Taraval+St+Suite+1081,+San+Francisco,+CA+94116/@37.7556169,-122.4882594,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2c22379db5e7c6dd:0xfea1e1472b35cebd!2m2!1d-122.4764775!2d37.7428405?entry=ttu" target="_blank">Waste</a></div>`)[0];
+                popup_db3df8f3fd63bb78658c624334ff8237.setContent(html_ab8b668346d57ead6764cb9ef4594a7c);
             
         
 
-        marker_6e88573c0a5d6946e1be3949be896b7c.bindPopup(popup_2d1b07f0ddc5c2c0c9830fd976e0b9e5)
+        marker_b1765b56c8cd8517c041ddc6eae3db6b.bindPopup(popup_db3df8f3fd63bb78658c624334ff8237)
         ;
 
         
     
     
-            marker_6e88573c0a5d6946e1be3949be896b7c.bindTooltip(
+            var marker_99dcbe71c9db6e0b2e11e664488be214 = L.marker(
+                [37.80443, -122.41337],
+                {}
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
+        
+    
+            marker_99dcbe71c9db6e0b2e11e664488be214.bindTooltip(
                 `<div>
                      Water
                  </div>`,
@@ -156,28 +147,28 @@
             );
         
     
-            var marker_466c143ace4fc5e391910ecab1b60794 = L.marker(
-                [37.775145, -122.4539253],
-                {}
-            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
-        
-    
-        var popup_556d43fff263cff4866a958b56ec2938 = L.popup({"maxWidth": "100%"});
+        var popup_9abed2c5a1d3030d32ea2191daadd5ae = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_b516512711f23deecb521c61540f94e5 = $(`<div id="html_b516512711f23deecb521c61540f94e5" style="width: 100.0%; height: 100.0%;"><a href="https://myusf.usfca.edu/hps/health-clinic/dignity-medical-services" target="_blank">Health</a></div>`)[0];
-                popup_556d43fff263cff4866a958b56ec2938.setContent(html_b516512711f23deecb521c61540f94e5);
+                var html_2d5304d48679135b39803b53122b6d31 = $(`<div id="html_2d5304d48679135b39803b53122b6d31" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/place/San+Francisco+Water+Department/@37.7810731,-122.4218213,17z/data=!3m1!4b1!4m6!3m5!1s0x808f7f00c18d6df7:0xaf9b1f7f76595df6!8m2!3d37.7810731!4d-122.4192464!16s%2Fg%2F1tjmdw_z?entry=ttu" target="_blank">Water</a></div>`)[0];
+                popup_9abed2c5a1d3030d32ea2191daadd5ae.setContent(html_2d5304d48679135b39803b53122b6d31);
             
         
 
-        marker_466c143ace4fc5e391910ecab1b60794.bindPopup(popup_556d43fff263cff4866a958b56ec2938)
+        marker_99dcbe71c9db6e0b2e11e664488be214.bindPopup(popup_9abed2c5a1d3030d32ea2191daadd5ae)
         ;
 
         
     
     
-            marker_466c143ace4fc5e391910ecab1b60794.bindTooltip(
+            var marker_072bd92179555beede43c4010a187b9a = L.marker(
+                [37.775145, -122.4539253],
+                {}
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
+        
+    
+            marker_072bd92179555beede43c4010a187b9a.bindTooltip(
                 `<div>
                      Health
                  </div>`,
@@ -185,28 +176,28 @@
             );
         
     
-            var marker_b1f4e059e66ab12218db55f54f6ed959 = L.marker(
-                [37.7724895, -122.4565344],
-                {}
-            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
-        
-    
-        var popup_6c4c43e8d49eaac4aefde0c507659ade = L.popup({"maxWidth": "100%"});
+        var popup_513e2af4b489cdd15aee1725bf548b12 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_70e2ad12e2ced573829043dda26944a8 = $(`<div id="html_70e2ad12e2ced573829043dda26944a8" style="width: 100.0%; height: 100.0%;"><a href="https://www.sanfranciscopolice.org/stations/park-station" target="_blank">Safety</a></div>`)[0];
-                popup_6c4c43e8d49eaac4aefde0c507659ade.setContent(html_70e2ad12e2ced573829043dda26944a8);
+                var html_275e2d2c0adf5c1d0f72be04e1de417c = $(`<div id="html_275e2d2c0adf5c1d0f72be04e1de417c" style="width: 100.0%; height: 100.0%;"><a href="https://myusf.usfca.edu/hps/health-clinic/dignity-medical-services" target="_blank">Health</a></div>`)[0];
+                popup_513e2af4b489cdd15aee1725bf548b12.setContent(html_275e2d2c0adf5c1d0f72be04e1de417c);
             
         
 
-        marker_b1f4e059e66ab12218db55f54f6ed959.bindPopup(popup_6c4c43e8d49eaac4aefde0c507659ade)
+        marker_072bd92179555beede43c4010a187b9a.bindPopup(popup_513e2af4b489cdd15aee1725bf548b12)
         ;
 
         
     
     
-            marker_b1f4e059e66ab12218db55f54f6ed959.bindTooltip(
+            var marker_2cd498ac3843df3153405836075daa29 = L.marker(
+                [37.7724895, -122.4565344],
+                {}
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
+        
+    
+            marker_2cd498ac3843df3153405836075daa29.bindTooltip(
                 `<div>
                      Safety
                  </div>`,
@@ -214,28 +205,28 @@
             );
         
     
-            var marker_76750ac444ff37767745e5f2c9535929 = L.marker(
-                [37.7754, -122.44973],
-                {}
-            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
-        
-    
-        var popup_61436267129eff85eba1fc95e0f4a7d2 = L.popup({"maxWidth": "100%"});
+        var popup_9d3403159b2378aa5b959b27ec7981f3 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_468e28bd69cf5ef7bc50d10f3588bb24 = $(`<div id="html_468e28bd69cf5ef7bc50d10f3588bb24" style="width: 100.0%; height: 100.0%;"><a href="https://www.sfmta.com/routes/5-fulton" target="_blank">Transportation, Muni: 5</a></div>`)[0];
-                popup_61436267129eff85eba1fc95e0f4a7d2.setContent(html_468e28bd69cf5ef7bc50d10f3588bb24);
+                var html_5d4816288c0a1d6c20ae15005dcef73b = $(`<div id="html_5d4816288c0a1d6c20ae15005dcef73b" style="width: 100.0%; height: 100.0%;"><a href="https://www.sanfranciscopolice.org/stations/park-station" target="_blank">Safety</a></div>`)[0];
+                popup_9d3403159b2378aa5b959b27ec7981f3.setContent(html_5d4816288c0a1d6c20ae15005dcef73b);
             
         
 
-        marker_76750ac444ff37767745e5f2c9535929.bindPopup(popup_61436267129eff85eba1fc95e0f4a7d2)
+        marker_2cd498ac3843df3153405836075daa29.bindPopup(popup_9d3403159b2378aa5b959b27ec7981f3)
         ;
 
         
     
     
-            marker_76750ac444ff37767745e5f2c9535929.bindTooltip(
+            var marker_b598f9a2315b1d9a7efcf7f62e8f70af = L.marker(
+                [37.7754, -122.44973],
+                {}
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
+        
+    
+            marker_b598f9a2315b1d9a7efcf7f62e8f70af.bindTooltip(
                 `<div>
                      Transportation, Muni: 5
                  </div>`,
@@ -243,28 +234,28 @@
             );
         
     
-            var marker_a4972711b424b0045f220d841d73eada = L.marker(
-                [37.7820461, -122.4491252],
-                {}
-            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
-        
-    
-        var popup_557944132e9f006a76444188c1f2c7c7 = L.popup({"maxWidth": "100%"});
+        var popup_853a60a8aff61fc0a10b89f28910b1c4 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_14843c402936d50aeea61068c5310f32 = $(`<div id="html_14843c402936d50aeea61068c5310f32" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps?sca_esv=09421e5d5db007db&output=search&q=city+center+shopping+mall&source=lnms&entry=mc&ved=1t:200715&ictx=111" target="_blank">Shopping</a></div>`)[0];
-                popup_557944132e9f006a76444188c1f2c7c7.setContent(html_14843c402936d50aeea61068c5310f32);
+                var html_047b11ae0d6c224168046a2c82e9218d = $(`<div id="html_047b11ae0d6c224168046a2c82e9218d" style="width: 100.0%; height: 100.0%;"><a href="https://www.sfmta.com/routes/5-fulton" target="_blank">Transportation, Muni: 5</a></div>`)[0];
+                popup_853a60a8aff61fc0a10b89f28910b1c4.setContent(html_047b11ae0d6c224168046a2c82e9218d);
             
         
 
-        marker_a4972711b424b0045f220d841d73eada.bindPopup(popup_557944132e9f006a76444188c1f2c7c7)
+        marker_b598f9a2315b1d9a7efcf7f62e8f70af.bindPopup(popup_853a60a8aff61fc0a10b89f28910b1c4)
         ;
 
         
     
     
-            marker_a4972711b424b0045f220d841d73eada.bindTooltip(
+            var marker_8d8df98c6b3a897143510b3049f079bf = L.marker(
+                [37.7820461, -122.4491252],
+                {}
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
+        
+    
+            marker_8d8df98c6b3a897143510b3049f079bf.bindTooltip(
                 `<div>
                      Shopping
                  </div>`,
@@ -272,28 +263,28 @@
             );
         
     
-            var marker_f3375b4e21086f8414f431c8c0c3f167 = L.marker(
-                [37.7738489, -122.4526904],
-                {}
-            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
-        
-    
-        var popup_14630c72017219a56f9c95bdb08f7c51 = L.popup({"maxWidth": "100%"});
+        var popup_b8a373d9a08be1d39a9e253af0a441b5 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_08007ecee3c9336e7868610023860797 = $(`<div id="html_08007ecee3c9336e7868610023860797" style="width: 100.0%; height: 100.0%;"><a href="https://www.tripadvisor.com/Restaurants-g60713-zfn7222620-San_Francisco_California.html" target="_blank">Food</a></div>`)[0];
-                popup_14630c72017219a56f9c95bdb08f7c51.setContent(html_08007ecee3c9336e7868610023860797);
+                var html_0bef88da07eb10fda82a30ce7745b1f9 = $(`<div id="html_0bef88da07eb10fda82a30ce7745b1f9" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps?sca_esv=09421e5d5db007db&output=search&q=city+center+shopping+mall&source=lnms&entry=mc&ved=1t:200715&ictx=111" target="_blank">Shopping</a></div>`)[0];
+                popup_b8a373d9a08be1d39a9e253af0a441b5.setContent(html_0bef88da07eb10fda82a30ce7745b1f9);
             
         
 
-        marker_f3375b4e21086f8414f431c8c0c3f167.bindPopup(popup_14630c72017219a56f9c95bdb08f7c51)
+        marker_8d8df98c6b3a897143510b3049f079bf.bindPopup(popup_b8a373d9a08be1d39a9e253af0a441b5)
         ;
 
         
     
     
-            marker_f3375b4e21086f8414f431c8c0c3f167.bindTooltip(
+            var marker_e5031dfaedd2bdabd475b5c8ffa45a98 = L.marker(
+                [37.7738489, -122.4526904],
+                {}
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
+        
+    
+            marker_e5031dfaedd2bdabd475b5c8ffa45a98.bindTooltip(
                 `<div>
                      Food
                  </div>`,
@@ -301,28 +292,28 @@
             );
         
     
-            var marker_c8fce60cfd8aa484638e69199ed6ce63 = L.marker(
-                [37.7703713, -122.4483282],
-                {}
-            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
-        
-    
-        var popup_7e1959ae113473d726b184b94969ae48 = L.popup({"maxWidth": "100%"});
+        var popup_14d3712e2a29e88620ffd938ef91869b = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_3babd35d10305aec0f912ae4b7b6ef6d = $(`<div id="html_3babd35d10305aec0f912ae4b7b6ef6d" style="width: 100.0%; height: 100.0%;"><a href="https://sfrecpark.org/facilities/facility/details/Buena-Vista-Park-155" target="_blank">Outdoors</a></div>`)[0];
-                popup_7e1959ae113473d726b184b94969ae48.setContent(html_3babd35d10305aec0f912ae4b7b6ef6d);
+                var html_9f5a34918b6e403f42be83533178d9ce = $(`<div id="html_9f5a34918b6e403f42be83533178d9ce" style="width: 100.0%; height: 100.0%;"><a href="https://www.tripadvisor.com/Restaurants-g60713-zfn7222620-San_Francisco_California.html" target="_blank">Food</a></div>`)[0];
+                popup_14d3712e2a29e88620ffd938ef91869b.setContent(html_9f5a34918b6e403f42be83533178d9ce);
             
         
 
-        marker_c8fce60cfd8aa484638e69199ed6ce63.bindPopup(popup_7e1959ae113473d726b184b94969ae48)
+        marker_e5031dfaedd2bdabd475b5c8ffa45a98.bindPopup(popup_14d3712e2a29e88620ffd938ef91869b)
         ;
 
         
     
     
-            marker_c8fce60cfd8aa484638e69199ed6ce63.bindTooltip(
+            var marker_a389135990a5ab86b6c5f92fa2127d02 = L.marker(
+                [37.7703713, -122.4483282],
+                {}
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
+        
+    
+            marker_a389135990a5ab86b6c5f92fa2127d02.bindTooltip(
                 `<div>
                      Outdoors
                  </div>`,
@@ -330,148 +321,263 @@
             );
         
     
-            var poly_line_b523e91c4688eb3cd5b0aadf3a169b61 = L.polyline(
+        var popup_4b444e70fe54059e71dc7fce36c7de1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b15a9b176147bf79c3880b836f20c1fa = $(`<div id="html_b15a9b176147bf79c3880b836f20c1fa" style="width: 100.0%; height: 100.0%;"><a href="https://sfrecpark.org/facilities/facility/details/Buena-Vista-Park-155" target="_blank">Outdoors</a></div>`)[0];
+                popup_4b444e70fe54059e71dc7fce36c7de1e.setContent(html_b15a9b176147bf79c3880b836f20c1fa);
+            
+        
+
+        marker_a389135990a5ab86b6c5f92fa2127d02.bindPopup(popup_4b444e70fe54059e71dc7fce36c7de1e)
+        ;
+
+        
+    
+    
+            var marker_e4f490a14a4a15f0d55f6f681ebdd3b1 = L.marker(
+                [37.7690194, -122.4572928],
+                {}
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
+        
+    
+            marker_e4f490a14a4a15f0d55f6f681ebdd3b1.bindTooltip(
+                `<div>
+                     Shooping
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_3dd8c05c695ae076f2a701cb42adb2e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df3e3c8f02c293af18d590f72e9c41c0 = $(`<div id="html_df3e3c8f02c293af18d590f72e9c41c0" style="width: 100.0%; height: 100.0%;"><a href="https://www.sfjapantown.org/japan-center-malls/" target="_blank">Shooping</a></div>`)[0];
+                popup_3dd8c05c695ae076f2a701cb42adb2e7.setContent(html_df3e3c8f02c293af18d590f72e9c41c0);
+            
+        
+
+        marker_e4f490a14a4a15f0d55f6f681ebdd3b1.bindPopup(popup_3dd8c05c695ae076f2a701cb42adb2e7)
+        ;
+
+        
+    
+    
+            var marker_b597d24020586d2550c6a49051db75a5 = L.marker(
+                [37.7726187, -122.4602558],
+                {}
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
+        
+    
+            marker_b597d24020586d2550c6a49051db75a5.bindTooltip(
+                `<div>
+                     Outdoors
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_ad894a05da7f4dd5570843cd87b652ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28a8c4f22a4f83a68aef488268263454 = $(`<div id="html_28a8c4f22a4f83a68aef488268263454" style="width: 100.0%; height: 100.0%;"><a href="https://sfrecpark.org/770/Golden-Gate-Park" target="_blank">Outdoors</a></div>`)[0];
+                popup_ad894a05da7f4dd5570843cd87b652ef.setContent(html_28a8c4f22a4f83a68aef488268263454);
+            
+        
+
+        marker_b597d24020586d2550c6a49051db75a5.bindPopup(popup_ad894a05da7f4dd5570843cd87b652ef)
+        ;
+
+        
+    
+    
+            var poly_line_08fad3ac320a54d81379000442301a2c = L.polyline(
                 [[37.77636, -122.449898], [37.77636, -122.449898]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
         
     
-        var popup_bdbaa83af5f281c88e9f0faca35f67bf = L.popup({"maxWidth": "100%"});
+        var popup_8c2e368a213663febcb6435483ce1105 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_fdca978423901af0b7d4a18238a520d4 = $(`<div id="html_fdca978423901af0b7d4a18238a520d4" style="width: 100.0%; height: 100.0%;">Walking Time: 0.00 minutes</div>`)[0];
-                popup_bdbaa83af5f281c88e9f0faca35f67bf.setContent(html_fdca978423901af0b7d4a18238a520d4);
+                var html_f89ddd28cafa4163c5ec4a3889142c58 = $(`<div id="html_f89ddd28cafa4163c5ec4a3889142c58" style="width: 100.0%; height: 100.0%;">Walking Time: 0.00 minutes</div>`)[0];
+                popup_8c2e368a213663febcb6435483ce1105.setContent(html_f89ddd28cafa4163c5ec4a3889142c58);
             
         
 
-        poly_line_b523e91c4688eb3cd5b0aadf3a169b61.bindPopup(popup_bdbaa83af5f281c88e9f0faca35f67bf)
+        poly_line_08fad3ac320a54d81379000442301a2c.bindPopup(popup_8c2e368a213663febcb6435483ce1105)
         ;
 
         
     
     
-            var poly_line_0bc2e4fb644b9e61082ff5533e36b0c4 = L.polyline(
+            var poly_line_40919386ff163fde43f47745f9069572 = L.polyline(
                 [[37.77636, -122.449898], [37.775145, -122.4539253]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
         
     
-        var popup_822940beca3e14cfeb55665a767bb4b3 = L.popup({"maxWidth": "100%"});
+        var popup_71b52182a5a685ef2c2975b4d043222a = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_343b92b0f79b01dcd7391f94691f333c = $(`<div id="html_343b92b0f79b01dcd7391f94691f333c" style="width: 100.0%; height: 100.0%;">Walking Time: 4.55 minutes</div>`)[0];
-                popup_822940beca3e14cfeb55665a767bb4b3.setContent(html_343b92b0f79b01dcd7391f94691f333c);
+                var html_26e87acf04c5a4bb75ca3c39369913bc = $(`<div id="html_26e87acf04c5a4bb75ca3c39369913bc" style="width: 100.0%; height: 100.0%;">Walking Time: 4.55 minutes</div>`)[0];
+                popup_71b52182a5a685ef2c2975b4d043222a.setContent(html_26e87acf04c5a4bb75ca3c39369913bc);
             
         
 
-        poly_line_0bc2e4fb644b9e61082ff5533e36b0c4.bindPopup(popup_822940beca3e14cfeb55665a767bb4b3)
+        poly_line_40919386ff163fde43f47745f9069572.bindPopup(popup_71b52182a5a685ef2c2975b4d043222a)
         ;
 
         
     
     
-            var poly_line_097ecece74bb6acfbd8e82ce869f53cd = L.polyline(
+            var poly_line_9ba3ef7719160cc6d649925f307b0f9e = L.polyline(
                 [[37.77636, -122.449898], [37.7724895, -122.4565344]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
         
     
-        var popup_35c0a4a52aa5fd333c28360d9fb120cb = L.popup({"maxWidth": "100%"});
+        var popup_dce190c33be685d1c00bf0b46d0d4391 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_667df2587f34aa18db1f97105fb2851d = $(`<div id="html_667df2587f34aa18db1f97105fb2851d" style="width: 100.0%; height: 100.0%;">Walking Time: 8.70 minutes</div>`)[0];
-                popup_35c0a4a52aa5fd333c28360d9fb120cb.setContent(html_667df2587f34aa18db1f97105fb2851d);
+                var html_25a53b317d41184f986edd3563298e9e = $(`<div id="html_25a53b317d41184f986edd3563298e9e" style="width: 100.0%; height: 100.0%;">Walking Time: 8.70 minutes</div>`)[0];
+                popup_dce190c33be685d1c00bf0b46d0d4391.setContent(html_25a53b317d41184f986edd3563298e9e);
             
         
 
-        poly_line_097ecece74bb6acfbd8e82ce869f53cd.bindPopup(popup_35c0a4a52aa5fd333c28360d9fb120cb)
+        poly_line_9ba3ef7719160cc6d649925f307b0f9e.bindPopup(popup_dce190c33be685d1c00bf0b46d0d4391)
         ;
 
         
     
     
-            var poly_line_c196a890ee89335058a04cf0133fcb74 = L.polyline(
+            var poly_line_5b72269cf3a8470cae9cfe1f2f0446ee = L.polyline(
                 [[37.77636, -122.449898], [37.7754, -122.44973]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
         
     
-        var popup_d0323db953f34f29971df3e9cbb49364 = L.popup({"maxWidth": "100%"});
+        var popup_b75ae61e2b9ef5937923ec6ead5145f5 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_c8f0cd077510c53442958811455fd44a = $(`<div id="html_c8f0cd077510c53442958811455fd44a" style="width: 100.0%; height: 100.0%;">Walking Time: 1.29 minutes</div>`)[0];
-                popup_d0323db953f34f29971df3e9cbb49364.setContent(html_c8f0cd077510c53442958811455fd44a);
+                var html_b220a7cb020d930682a983f56cf1059c = $(`<div id="html_b220a7cb020d930682a983f56cf1059c" style="width: 100.0%; height: 100.0%;">Walking Time: 1.29 minutes</div>`)[0];
+                popup_b75ae61e2b9ef5937923ec6ead5145f5.setContent(html_b220a7cb020d930682a983f56cf1059c);
             
         
 
-        poly_line_c196a890ee89335058a04cf0133fcb74.bindPopup(popup_d0323db953f34f29971df3e9cbb49364)
+        poly_line_5b72269cf3a8470cae9cfe1f2f0446ee.bindPopup(popup_b75ae61e2b9ef5937923ec6ead5145f5)
         ;
 
         
     
     
-            var poly_line_ce9f4a77ebb43198e992fdeb127b7ad6 = L.polyline(
+            var poly_line_c547278004361d55c5ed1af2201d5734 = L.polyline(
                 [[37.77636, -122.449898], [37.7820461, -122.4491252]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
         
     
-        var popup_e578dec0beaab81ce1ee6fe6ed7ec289 = L.popup({"maxWidth": "100%"});
+        var popup_33a3dddd0b0a97176f986d99765d50bf = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_ecb74f9064d04bff3062b0ba063a355b = $(`<div id="html_ecb74f9064d04bff3062b0ba063a355b" style="width: 100.0%; height: 100.0%;">Walking Time: 7.63 minutes</div>`)[0];
-                popup_e578dec0beaab81ce1ee6fe6ed7ec289.setContent(html_ecb74f9064d04bff3062b0ba063a355b);
+                var html_fb922773a00e6d183dc2004d959d8bbb = $(`<div id="html_fb922773a00e6d183dc2004d959d8bbb" style="width: 100.0%; height: 100.0%;">Walking Time: 7.63 minutes</div>`)[0];
+                popup_33a3dddd0b0a97176f986d99765d50bf.setContent(html_fb922773a00e6d183dc2004d959d8bbb);
             
         
 
-        poly_line_ce9f4a77ebb43198e992fdeb127b7ad6.bindPopup(popup_e578dec0beaab81ce1ee6fe6ed7ec289)
+        poly_line_c547278004361d55c5ed1af2201d5734.bindPopup(popup_33a3dddd0b0a97176f986d99765d50bf)
         ;
 
         
     
     
-            var poly_line_67cc79097f4e498dd762898a9e34d409 = L.polyline(
+            var poly_line_5d000d6155911949df47a9a9ca17c13b = L.polyline(
                 [[37.77636, -122.449898], [37.7738489, -122.4526904]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
         
     
-        var popup_dc9cd58196dd76cd3d9e7ca1d48d4bad = L.popup({"maxWidth": "100%"});
+        var popup_8c4ad89cf5731008771523dfe92f6013 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_bbfdfb71fd98e4e15186f8bf3e065702 = $(`<div id="html_bbfdfb71fd98e4e15186f8bf3e065702" style="width: 100.0%; height: 100.0%;">Walking Time: 4.46 minutes</div>`)[0];
-                popup_dc9cd58196dd76cd3d9e7ca1d48d4bad.setContent(html_bbfdfb71fd98e4e15186f8bf3e065702);
+                var html_eb633a678b603cf7d0f6d15dab81a147 = $(`<div id="html_eb633a678b603cf7d0f6d15dab81a147" style="width: 100.0%; height: 100.0%;">Walking Time: 4.46 minutes</div>`)[0];
+                popup_8c4ad89cf5731008771523dfe92f6013.setContent(html_eb633a678b603cf7d0f6d15dab81a147);
             
         
 
-        poly_line_67cc79097f4e498dd762898a9e34d409.bindPopup(popup_dc9cd58196dd76cd3d9e7ca1d48d4bad)
+        poly_line_5d000d6155911949df47a9a9ca17c13b.bindPopup(popup_8c4ad89cf5731008771523dfe92f6013)
         ;
 
         
     
     
-            var poly_line_3bab5e82ad735b7c313da848c86f933d = L.polyline(
+            var poly_line_11facf1b96f7fa2311a3d065b626d743 = L.polyline(
                 [[37.77636, -122.449898], [37.7703713, -122.4483282]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
         
     
-        var popup_22b884b26012c605a118df9569b26960 = L.popup({"maxWidth": "100%"});
+        var popup_2d8f4c8e47a1d43fcef5b8d8687adf49 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_8bdd659cd5c0a6f0d12163c95da79e53 = $(`<div id="html_8bdd659cd5c0a6f0d12163c95da79e53" style="width: 100.0%; height: 100.0%;">Walking Time: 8.16 minutes</div>`)[0];
-                popup_22b884b26012c605a118df9569b26960.setContent(html_8bdd659cd5c0a6f0d12163c95da79e53);
+                var html_a491e945e1aa3360c398a058d4ec87ac = $(`<div id="html_a491e945e1aa3360c398a058d4ec87ac" style="width: 100.0%; height: 100.0%;">Walking Time: 8.16 minutes</div>`)[0];
+                popup_2d8f4c8e47a1d43fcef5b8d8687adf49.setContent(html_a491e945e1aa3360c398a058d4ec87ac);
             
         
 
-        poly_line_3bab5e82ad735b7c313da848c86f933d.bindPopup(popup_22b884b26012c605a118df9569b26960)
+        poly_line_11facf1b96f7fa2311a3d065b626d743.bindPopup(popup_2d8f4c8e47a1d43fcef5b8d8687adf49)
+        ;
+
+        
+    
+    
+            var poly_line_7dd7641a62b005c6d93a58dbebfa865f = L.polyline(
+                [[37.77636, -122.449898], [37.7690194, -122.4572928]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
+        
+    
+        var popup_eaf54274200e1dec4e0108050c885525 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc13686579b2f701f42499ec2f8f4bbd = $(`<div id="html_cc13686579b2f701f42499ec2f8f4bbd" style="width: 100.0%; height: 100.0%;">Walking Time: 12.52 minutes</div>`)[0];
+                popup_eaf54274200e1dec4e0108050c885525.setContent(html_cc13686579b2f701f42499ec2f8f4bbd);
+            
+        
+
+        poly_line_7dd7641a62b005c6d93a58dbebfa865f.bindPopup(popup_eaf54274200e1dec4e0108050c885525)
+        ;
+
+        
+    
+    
+            var poly_line_63cb3c7bc727bd1ffc96768255f8aa94 = L.polyline(
+                [[37.77636, -122.449898], [37.7726187, -122.4602558]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_76141880966f9e5cf3132b5eaf5897ae);
+        
+    
+        var popup_814e974bb391260e917e3b98b1a53ba7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d256cded70cb05663e01d8ed7c74d57 = $(`<div id="html_8d256cded70cb05663e01d8ed7c74d57" style="width: 100.0%; height: 100.0%;">Walking Time: 12.01 minutes</div>`)[0];
+                popup_814e974bb391260e917e3b98b1a53ba7.setContent(html_8d256cded70cb05663e01d8ed7c74d57);
+            
+        
+
+        poly_line_63cb3c7bc727bd1ffc96768255f8aa94.bindPopup(popup_814e974bb391260e917e3b98b1a53ba7)
         ;
 
         
