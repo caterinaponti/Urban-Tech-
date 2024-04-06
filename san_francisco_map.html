@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_451689131a91cfe3b7ceb3837305417b {
+                #map_6b66e9bbc752ca47e11b3cbb7dc86767 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,18 +39,18 @@
 <body>
     
     
-            <div class="folium-map" id="map_451689131a91cfe3b7ceb3837305417b" ></div>
+            <div class="folium-map" id="map_6b66e9bbc752ca47e11b3cbb7dc86767" ></div>
         
 </body>
 <script>
     
     
-            var map_451689131a91cfe3b7ceb3837305417b = L.map(
-                "map_451689131a91cfe3b7ceb3837305417b",
+            var map_6b66e9bbc752ca47e11b3cbb7dc86767 = L.map(
+                "map_6b66e9bbc752ca47e11b3cbb7dc86767",
                 {
-                    center: [37.7749, -122.4194],
+                    center: [37.7797807, -122.4329079],
                     crs: L.CRS.EPSG3857,
-                    zoom: 12,
+                    zoom: 15,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -60,22 +60,37 @@
 
         
     
-            var tile_layer_60d2fb5ed8ac541aab01352b3d3d0677 = L.tileLayer(
+            var tile_layer_9e97bc01aaaf456b02743e83c3c21c9c = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_60d2fb5ed8ac541aab01352b3d3d0677.addTo(map_451689131a91cfe3b7ceb3837305417b);
+            tile_layer_9e97bc01aaaf456b02743e83c3c21c9c.addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
         
     
-            var marker_77f729fd1ef3b0a650f8abdefc13234b = L.marker(
+            var marker_74dd85c98d0c1601d4cfd45cf5f8b3bf = L.marker(
                 [37.77636, -122.449898],
                 {}
-            ).addTo(map_451689131a91cfe3b7ceb3837305417b);
+            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
         
     
-            marker_77f729fd1ef3b0a650f8abdefc13234b.bindTooltip(
+        var popup_0e6eea76498409b042eb59c0059c99de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5a99b51136358c3d6e4876802982625 = $(`<div id="html_e5a99b51136358c3d6e4876802982625" style="width: 100.0%; height: 100.0%;"><a href="https://www.usfca.edu" target="_blank">University of San Francisco</a></div>`)[0];
+                popup_0e6eea76498409b042eb59c0059c99de.setContent(html_e5a99b51136358c3d6e4876802982625);
+            
+        
+
+        marker_74dd85c98d0c1601d4cfd45cf5f8b3bf.bindPopup(popup_0e6eea76498409b042eb59c0059c99de)
+        ;
+
+        
+    
+    
+            marker_74dd85c98d0c1601d4cfd45cf5f8b3bf.bindTooltip(
                 `<div>
                      University of San Francisco
                  </div>`,
@@ -83,18 +98,383 @@
             );
         
     
-            var marker_e251411b56e439edb7ff5a90cd04a932 = L.marker(
+            var marker_36eca15c19d6a404aa28e8c43488889e = L.marker(
                 [37.74287, -122.47645],
                 {}
-            ).addTo(map_451689131a91cfe3b7ceb3837305417b);
+            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
         
     
-            marker_e251411b56e439edb7ff5a90cd04a932.bindTooltip(
+        var popup_a561e9f894402fa9468f052e7f70cfff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35cb30eed4bbea2f20c011d49c47217f = $(`<div id="html_35cb30eed4bbea2f20c011d49c47217f" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/37.7683968,-122.4572928/Titan+Junk+Removal+Inc.,+945+Taraval+St+Suite+1081,+San+Francisco,+CA+94116/@37.7556169,-122.4882594,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2c22379db5e7c6dd:0xfea1e1472b35cebd!2m2!1d-122.4764775!2d37.7428405?entry=ttu" target="_blank">Waste</a></div>`)[0];
+                popup_a561e9f894402fa9468f052e7f70cfff.setContent(html_35cb30eed4bbea2f20c011d49c47217f);
+            
+        
+
+        marker_36eca15c19d6a404aa28e8c43488889e.bindPopup(popup_a561e9f894402fa9468f052e7f70cfff)
+        ;
+
+        
+    
+    
+            marker_36eca15c19d6a404aa28e8c43488889e.bindTooltip(
                 `<div>
                      Waste
                  </div>`,
                 {"sticky": true}
             );
         
+    
+            var marker_6e88573c0a5d6946e1be3949be896b7c = L.marker(
+                [37.80443, -122.41337],
+                {}
+            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+        
+    
+        var popup_2d1b07f0ddc5c2c0c9830fd976e0b9e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddd0e6c100a103fdf2c8122485fcd92c = $(`<div id="html_ddd0e6c100a103fdf2c8122485fcd92c" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/place/San+Francisco+Water+Department/@37.7810731,-122.4218213,17z/data=!3m1!4b1!4m6!3m5!1s0x808f7f00c18d6df7:0xaf9b1f7f76595df6!8m2!3d37.7810731!4d-122.4192464!16s%2Fg%2F1tjmdw_z?entry=ttu" target="_blank">Water</a></div>`)[0];
+                popup_2d1b07f0ddc5c2c0c9830fd976e0b9e5.setContent(html_ddd0e6c100a103fdf2c8122485fcd92c);
+            
+        
+
+        marker_6e88573c0a5d6946e1be3949be896b7c.bindPopup(popup_2d1b07f0ddc5c2c0c9830fd976e0b9e5)
+        ;
+
+        
+    
+    
+            marker_6e88573c0a5d6946e1be3949be896b7c.bindTooltip(
+                `<div>
+                     Water
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_466c143ace4fc5e391910ecab1b60794 = L.marker(
+                [37.775145, -122.4539253],
+                {}
+            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+        
+    
+        var popup_556d43fff263cff4866a958b56ec2938 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b516512711f23deecb521c61540f94e5 = $(`<div id="html_b516512711f23deecb521c61540f94e5" style="width: 100.0%; height: 100.0%;"><a href="https://myusf.usfca.edu/hps/health-clinic/dignity-medical-services" target="_blank">Health</a></div>`)[0];
+                popup_556d43fff263cff4866a958b56ec2938.setContent(html_b516512711f23deecb521c61540f94e5);
+            
+        
+
+        marker_466c143ace4fc5e391910ecab1b60794.bindPopup(popup_556d43fff263cff4866a958b56ec2938)
+        ;
+
+        
+    
+    
+            marker_466c143ace4fc5e391910ecab1b60794.bindTooltip(
+                `<div>
+                     Health
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1f4e059e66ab12218db55f54f6ed959 = L.marker(
+                [37.7724895, -122.4565344],
+                {}
+            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+        
+    
+        var popup_6c4c43e8d49eaac4aefde0c507659ade = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70e2ad12e2ced573829043dda26944a8 = $(`<div id="html_70e2ad12e2ced573829043dda26944a8" style="width: 100.0%; height: 100.0%;"><a href="https://www.sanfranciscopolice.org/stations/park-station" target="_blank">Safety</a></div>`)[0];
+                popup_6c4c43e8d49eaac4aefde0c507659ade.setContent(html_70e2ad12e2ced573829043dda26944a8);
+            
+        
+
+        marker_b1f4e059e66ab12218db55f54f6ed959.bindPopup(popup_6c4c43e8d49eaac4aefde0c507659ade)
+        ;
+
+        
+    
+    
+            marker_b1f4e059e66ab12218db55f54f6ed959.bindTooltip(
+                `<div>
+                     Safety
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76750ac444ff37767745e5f2c9535929 = L.marker(
+                [37.7754, -122.44973],
+                {}
+            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+        
+    
+        var popup_61436267129eff85eba1fc95e0f4a7d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_468e28bd69cf5ef7bc50d10f3588bb24 = $(`<div id="html_468e28bd69cf5ef7bc50d10f3588bb24" style="width: 100.0%; height: 100.0%;"><a href="https://www.sfmta.com/routes/5-fulton" target="_blank">Transportation, Muni: 5</a></div>`)[0];
+                popup_61436267129eff85eba1fc95e0f4a7d2.setContent(html_468e28bd69cf5ef7bc50d10f3588bb24);
+            
+        
+
+        marker_76750ac444ff37767745e5f2c9535929.bindPopup(popup_61436267129eff85eba1fc95e0f4a7d2)
+        ;
+
+        
+    
+    
+            marker_76750ac444ff37767745e5f2c9535929.bindTooltip(
+                `<div>
+                     Transportation, Muni: 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4972711b424b0045f220d841d73eada = L.marker(
+                [37.7820461, -122.4491252],
+                {}
+            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+        
+    
+        var popup_557944132e9f006a76444188c1f2c7c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14843c402936d50aeea61068c5310f32 = $(`<div id="html_14843c402936d50aeea61068c5310f32" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps?sca_esv=09421e5d5db007db&output=search&q=city+center+shopping+mall&source=lnms&entry=mc&ved=1t:200715&ictx=111" target="_blank">Shopping</a></div>`)[0];
+                popup_557944132e9f006a76444188c1f2c7c7.setContent(html_14843c402936d50aeea61068c5310f32);
+            
+        
+
+        marker_a4972711b424b0045f220d841d73eada.bindPopup(popup_557944132e9f006a76444188c1f2c7c7)
+        ;
+
+        
+    
+    
+            marker_a4972711b424b0045f220d841d73eada.bindTooltip(
+                `<div>
+                     Shopping
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3375b4e21086f8414f431c8c0c3f167 = L.marker(
+                [37.7738489, -122.4526904],
+                {}
+            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+        
+    
+        var popup_14630c72017219a56f9c95bdb08f7c51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08007ecee3c9336e7868610023860797 = $(`<div id="html_08007ecee3c9336e7868610023860797" style="width: 100.0%; height: 100.0%;"><a href="https://www.tripadvisor.com/Restaurants-g60713-zfn7222620-San_Francisco_California.html" target="_blank">Food</a></div>`)[0];
+                popup_14630c72017219a56f9c95bdb08f7c51.setContent(html_08007ecee3c9336e7868610023860797);
+            
+        
+
+        marker_f3375b4e21086f8414f431c8c0c3f167.bindPopup(popup_14630c72017219a56f9c95bdb08f7c51)
+        ;
+
+        
+    
+    
+            marker_f3375b4e21086f8414f431c8c0c3f167.bindTooltip(
+                `<div>
+                     Food
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8fce60cfd8aa484638e69199ed6ce63 = L.marker(
+                [37.7703713, -122.4483282],
+                {}
+            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+        
+    
+        var popup_7e1959ae113473d726b184b94969ae48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3babd35d10305aec0f912ae4b7b6ef6d = $(`<div id="html_3babd35d10305aec0f912ae4b7b6ef6d" style="width: 100.0%; height: 100.0%;"><a href="https://sfrecpark.org/facilities/facility/details/Buena-Vista-Park-155" target="_blank">Outdoors</a></div>`)[0];
+                popup_7e1959ae113473d726b184b94969ae48.setContent(html_3babd35d10305aec0f912ae4b7b6ef6d);
+            
+        
+
+        marker_c8fce60cfd8aa484638e69199ed6ce63.bindPopup(popup_7e1959ae113473d726b184b94969ae48)
+        ;
+
+        
+    
+    
+            marker_c8fce60cfd8aa484638e69199ed6ce63.bindTooltip(
+                `<div>
+                     Outdoors
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b523e91c4688eb3cd5b0aadf3a169b61 = L.polyline(
+                [[37.77636, -122.449898], [37.77636, -122.449898]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+        
+    
+        var popup_bdbaa83af5f281c88e9f0faca35f67bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdca978423901af0b7d4a18238a520d4 = $(`<div id="html_fdca978423901af0b7d4a18238a520d4" style="width: 100.0%; height: 100.0%;">Walking Time: 0.00 minutes</div>`)[0];
+                popup_bdbaa83af5f281c88e9f0faca35f67bf.setContent(html_fdca978423901af0b7d4a18238a520d4);
+            
+        
+
+        poly_line_b523e91c4688eb3cd5b0aadf3a169b61.bindPopup(popup_bdbaa83af5f281c88e9f0faca35f67bf)
+        ;
+
+        
+    
+    
+            var poly_line_0bc2e4fb644b9e61082ff5533e36b0c4 = L.polyline(
+                [[37.77636, -122.449898], [37.775145, -122.4539253]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+        
+    
+        var popup_822940beca3e14cfeb55665a767bb4b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_343b92b0f79b01dcd7391f94691f333c = $(`<div id="html_343b92b0f79b01dcd7391f94691f333c" style="width: 100.0%; height: 100.0%;">Walking Time: 4.55 minutes</div>`)[0];
+                popup_822940beca3e14cfeb55665a767bb4b3.setContent(html_343b92b0f79b01dcd7391f94691f333c);
+            
+        
+
+        poly_line_0bc2e4fb644b9e61082ff5533e36b0c4.bindPopup(popup_822940beca3e14cfeb55665a767bb4b3)
+        ;
+
+        
+    
+    
+            var poly_line_097ecece74bb6acfbd8e82ce869f53cd = L.polyline(
+                [[37.77636, -122.449898], [37.7724895, -122.4565344]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+        
+    
+        var popup_35c0a4a52aa5fd333c28360d9fb120cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_667df2587f34aa18db1f97105fb2851d = $(`<div id="html_667df2587f34aa18db1f97105fb2851d" style="width: 100.0%; height: 100.0%;">Walking Time: 8.70 minutes</div>`)[0];
+                popup_35c0a4a52aa5fd333c28360d9fb120cb.setContent(html_667df2587f34aa18db1f97105fb2851d);
+            
+        
+
+        poly_line_097ecece74bb6acfbd8e82ce869f53cd.bindPopup(popup_35c0a4a52aa5fd333c28360d9fb120cb)
+        ;
+
+        
+    
+    
+            var poly_line_c196a890ee89335058a04cf0133fcb74 = L.polyline(
+                [[37.77636, -122.449898], [37.7754, -122.44973]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+        
+    
+        var popup_d0323db953f34f29971df3e9cbb49364 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8f0cd077510c53442958811455fd44a = $(`<div id="html_c8f0cd077510c53442958811455fd44a" style="width: 100.0%; height: 100.0%;">Walking Time: 1.29 minutes</div>`)[0];
+                popup_d0323db953f34f29971df3e9cbb49364.setContent(html_c8f0cd077510c53442958811455fd44a);
+            
+        
+
+        poly_line_c196a890ee89335058a04cf0133fcb74.bindPopup(popup_d0323db953f34f29971df3e9cbb49364)
+        ;
+
+        
+    
+    
+            var poly_line_ce9f4a77ebb43198e992fdeb127b7ad6 = L.polyline(
+                [[37.77636, -122.449898], [37.7820461, -122.4491252]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+        
+    
+        var popup_e578dec0beaab81ce1ee6fe6ed7ec289 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecb74f9064d04bff3062b0ba063a355b = $(`<div id="html_ecb74f9064d04bff3062b0ba063a355b" style="width: 100.0%; height: 100.0%;">Walking Time: 7.63 minutes</div>`)[0];
+                popup_e578dec0beaab81ce1ee6fe6ed7ec289.setContent(html_ecb74f9064d04bff3062b0ba063a355b);
+            
+        
+
+        poly_line_ce9f4a77ebb43198e992fdeb127b7ad6.bindPopup(popup_e578dec0beaab81ce1ee6fe6ed7ec289)
+        ;
+
+        
+    
+    
+            var poly_line_67cc79097f4e498dd762898a9e34d409 = L.polyline(
+                [[37.77636, -122.449898], [37.7738489, -122.4526904]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+        
+    
+        var popup_dc9cd58196dd76cd3d9e7ca1d48d4bad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbfdfb71fd98e4e15186f8bf3e065702 = $(`<div id="html_bbfdfb71fd98e4e15186f8bf3e065702" style="width: 100.0%; height: 100.0%;">Walking Time: 4.46 minutes</div>`)[0];
+                popup_dc9cd58196dd76cd3d9e7ca1d48d4bad.setContent(html_bbfdfb71fd98e4e15186f8bf3e065702);
+            
+        
+
+        poly_line_67cc79097f4e498dd762898a9e34d409.bindPopup(popup_dc9cd58196dd76cd3d9e7ca1d48d4bad)
+        ;
+
+        
+    
+    
+            var poly_line_3bab5e82ad735b7c313da848c86f933d = L.polyline(
+                [[37.77636, -122.449898], [37.7703713, -122.4483282]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6b66e9bbc752ca47e11b3cbb7dc86767);
+        
+    
+        var popup_22b884b26012c605a118df9569b26960 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bdd659cd5c0a6f0d12163c95da79e53 = $(`<div id="html_8bdd659cd5c0a6f0d12163c95da79e53" style="width: 100.0%; height: 100.0%;">Walking Time: 8.16 minutes</div>`)[0];
+                popup_22b884b26012c605a118df9569b26960.setContent(html_8bdd659cd5c0a6f0d12163c95da79e53);
+            
+        
+
+        poly_line_3bab5e82ad735b7c313da848c86f933d.bindPopup(popup_22b884b26012c605a118df9569b26960)
+        ;
+
+        
+    
 </script>
 </html>
