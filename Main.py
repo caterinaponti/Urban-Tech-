@@ -17,6 +17,10 @@ def display_map():
   
     for coords in marker_coordinates:
         folium.Marker(coords).add_to(mapObj)
+
+    for coords in marker_coordinates:
+        folium.Marker(location=coords, popup="Marker Popup Text", icon=folium.Icon(color='blue')).add_to(mapObj)
+
     
     # Set iframe width and height
     mapObj.get_root().width = "1300px"
