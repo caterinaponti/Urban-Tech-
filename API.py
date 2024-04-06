@@ -34,7 +34,8 @@ def main():
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Green Tech</title>
     </head>
-    <body style = "background: linear-gradient(90deg, hsla(120, 93%, 84%, 1) 0%, hsla(185, 90%, 51%, 1) 100%);">
+    <body style = "background: linear-gradient(90deg, rgba(138,248,161,1) 0%, rgba(2,33,8,0.946298984034833) 100%);">
+        <h3>The Golden Gate Project</h3>
         <form method="POST" action="form_input">
         <label for="category">Select What Service You Need:</label>
         <select name ="category" id="category">
@@ -60,9 +61,10 @@ def calculate_distance():
         return "Invalid category selected."
 
     origin_lat = 37.776360
-    origin_lng = -122.449898
+    origin_lng = -122.449898 #USF
     destination_lat, destination_lng = category_destinations[category]
     distance = get_distance(origin_lat, origin_lng, destination_lat, destination_lng)
+
     return f"""
     <!DOCTYPE html>
     <html lang="en">
@@ -71,7 +73,7 @@ def calculate_distance():
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Distance Result</title>
     </head>
-    <body style="background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%); font-family: serif;">
+    <body style = "background: linear-gradient(90deg, rgba(138,248,161,1) 0%, rgba(2,33,8,0.946298984034833) 100%);">
         <img style="border:5px double black; float:right" src="https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800" width="300" height="150">
         <hr>
         <br>
@@ -112,7 +114,7 @@ def form_input():
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Distance Result</title>
     </head>
-    <body style="background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%); font-family: serif;">
+    <body style = "background: linear-gradient(90deg, rgba(138,248,161,1) 0%, rgba(2,33,8,0.946298984034833) 100%);">
         <img style="border:5px double black; float:right" src="https://static.dw.com/image/61391638_1004.jpeg" width="900" height="450">
         <hr>
         <br>
@@ -128,10 +130,6 @@ def form_input():
     """
 
     return html
-
-    
-
-
 
 
 if __name__ == '__main__':
