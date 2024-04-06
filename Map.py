@@ -58,7 +58,7 @@ def display_map():
         (37.7820461,-122.4491252, 'Shopping', "https://www.google.com/maps?sca_esv=09421e5d5db007db&output=search&q=city+center+shopping+mall&source=lnms&entry=mc&ved=1t:200715&ictx=111" ),
         (37.7738489,-122.4526904, 'Food', 'https://www.tripadvisor.com/Restaurants-g60713-zfn7222620-San_Francisco_California.html'),
         (37.7703713,-122.4483282, 'Outdoors', 'https://sfrecpark.org/facilities/facility/details/Buena-Vista-Park-155' ),
-        (37.7690194,-122.4572928, 'Shooping', 'https://www.sfjapantown.org/japan-center-malls/'),
+        (37.7690194,-122.4572928, 'Shopping', 'https://www.sfjapantown.org/japan-center-malls/'),
         (37.7726187,-122.4602558, 'Outdoors', 'https://sfrecpark.org/770/Golden-Gate-Park')
     ]   
     walkable_marker_coordinates = [
