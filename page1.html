@@ -104,7 +104,113 @@
         <div class="section-container">
             <div class="location">
                 <div class="location-info">
-                    <div class="section-title section-title-white">Places around us that we came up with!</div>
+                    <title>Top 10 albums of 2021</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: clamp(1rem, 2vw, 3rem);
+            font-family: "Open Sans", sans-serif;
+            font-size: 1.1rem;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .wrapper {
+            max-width: 80rem;
+            margin: 0 auto;
+        }
+
+        ol {
+            padding: 1.5rem 1.5rem 1.5rem 4em;
+            border: 0.3rem solid turquoise;
+            columns: 15rem;
+            column-gap: 7rem;
+            column-rule: 4px dotted turquoise;
+            border-radius: 0.5rem;
+        }
+
+        ol > * + * {
+            margin-top: 1rem;
+        }
+
+        li {
+            /* 	break-inside: avoid; */
+        }
+
+        ::marker {
+            content: counters(list-item, '') ': ';
+            font-weight: 700;
+            font-size: 1.5em;
+            color: turquoise;
+        }
+
+        li span {
+            display: block;
+        }
+
+        li span:first-child {
+            font-size: 1.5em;
+        }
+
+        li span:last-child {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Top 10 albums of 2021</h1>
+        <cite>Source: <a href="https://www.theguardian.com/music/2021/nov/30/the-50-best-albums-of-2021">The Guardian</a></cite>
+        <ol reversed>
+            <li>
+                <span>Mdou Moctar</span>
+                <span>Afrique Victime</span>
+            </li>
+            <li>
+                <span>Arlo Parks</span>
+                <span>Collapsed in Sunbeams</span>
+            </li>
+            <li>
+                <span>Olivia Rodrigo</span>
+                <span>Sour</span>
+            </li>
+            <li>
+                <span>Dry Cleaning</span>
+                <span>New Long Leg</span>
+            </li>
+            <li>
+                <span>Sault</span>
+                <span>Nine</span>
+            </li>
+            <li>
+                <span>Tyler, the Creator</span>
+                <span>Call Me If You Get Lost</span>
+            </li>
+            <li>
+                <span>The Weather Station</span>
+                <span>Ignorance</span>
+            </li>
+            <li>
+                <span>Little Simz</span>
+                <span>Sometimes I Might Be Introvert</span>
+            </li>
+            <li>
+                <span>Wolf Alice</span>
+                <span>Blue Weekend</span>
+            </li>
+            <li>
+                <span>Self Esteem</span>
+                <span>Prioritise Pleasure</span>
+            </li>
+        </ol>
+    </div>
+                    <!-- <div class="section-title section-title-white">Places around us that we came up with!</div>
                     <ul>
                         <li>Real Estate</li>
                         <li>Food</li>
@@ -116,7 +222,7 @@
                         <li>Shopping</li>
                         <li>Education</li>
                     </ul>
-                </div>
+                </div> -->
                 <!-- <img src="https://assets.website-files.com/5df7d7f577e11f468892ca8c/5e128f2ed7e90f46901d67e0_DJI_0198%20copy.jpg" alt="Potosi Hot Springs Cabin" class="location-image-wrapper"/> -->
             </div>
         </div>
