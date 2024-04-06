@@ -110,11 +110,15 @@
             box-sizing: border-box;
         }
 
+        img {
+            width: 100%;
+            display: block;
+        }
+
         body {
             margin: 0;
             padding: clamp(1rem, 2vw, 3rem);
             font-family: "Open Sans", sans-serif;
-            font-size: 1.1rem;
         }
 
         a {
@@ -127,39 +131,66 @@
         }
 
         ol {
-            padding: 1.5rem 1.5rem 1.5rem 4em;
-            border: 0.3rem solid turquoise;
-            columns: 15rem;
-            column-gap: 7rem;
-            column-rule: 4px dotted turquoise;
+            list-style: none;
+            padding: 1.5rem;
+            border: 0.1rem solid lightgrey;
+            columns: 20rem;
+            column-gap: 4rem;
+            column-rule: 0.2rem dotted turquoise;
             border-radius: 0.5rem;
         }
 
-        ol > * + * {
+        li {
+            --y: calc(100% - 2rem);
+            display: grid;
+            grid-template-columns: minmax(3.75em, auto) 1fr;
+            gap: 0 0.5em;
+            break-inside: avoid;
+            page-break-inside: avoid;
+            background: radial-gradient(circle at 30% var(--y), rgb(50 50 50), rgb(0 0 0));
+            color: white;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 0.17);
+        }
+
+        li + li {
             margin-top: 1rem;
         }
 
-        li {
-            /* 	break-inside: avoid; */
+        li img {
+            grid-column: 1 / 3;
+            grid-row: 1;
+            aspect-ratio: 1.8;
+            object-fit: cover;
         }
 
-        ::marker {
-            content: counters(list-item, '') ': ';
+        li::before {
+            counter-increment: list-item -1;
+            content: counter(list-item);
             font-weight: 700;
-            font-size: 1.5em;
+            font-size: 4.5em;
+            letter-spacing: -0.125em;
+            line-height: 1;
             color: turquoise;
+            grid-column: 1;
+            grid-row: span 2;
+            align-self: end;
+            margin: 0 0 -0.15em -0.15em;
         }
 
         li span {
-            display: block;
+            grid-column: 2;
         }
 
-        li span:first-child {
+        li span:first-of-type {
             font-size: 1.5em;
+            padding-top: 1rem;
         }
 
-        li span:last-child {
+        li span:last-of-type {
             font-style: italic;
+            padding-bottom: 1rem;
         }
     </style>
 </head>
@@ -210,6 +241,8 @@
             </li>
         </ol>
     </div>
+                
+    
                     <!-- <div class="section-title section-title-white">Places around us that we came up with!</div>
                     <ul>
                         <li>Real Estate</li>
