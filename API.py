@@ -3,7 +3,7 @@ import googlemaps
 
 app = Flask(__name__)
 
-# Requires API key
+# API key
 gmaps = googlemaps.Client(key='AIzaSyDgUK5W99p5QmoNWC3zI09sLN3GOwH7Ruk')
 
 category_destinations = {
@@ -16,6 +16,7 @@ category_destinations = {
     'outdoors': (37.7703713, -122.4483282)   # Buena Vista Park
 }
 
+#Returns distance between start location (USF) and destination
 def get_distance(origin_lat, origin_lng, destination_lat, destination_lng):
     distance_matrix = gmaps.distance_matrix((origin_lat, origin_lng), 
                                             (destination_lat, destination_lng),
@@ -26,6 +27,8 @@ def get_distance(origin_lat, origin_lng, destination_lat, destination_lng):
 
 @app.route('/')
 def main():
+    #Categories Form (Education, Health, Shopping, Food...)
+    # Dsiplay select option menu 
     return """
     <!DOCTYPE html>
     <html lang="en">
@@ -54,7 +57,6 @@ def main():
     </body>
     </html>
     """
-
 
 def calculate_distance():
     category = request.form.get('category')
@@ -88,6 +90,7 @@ def calculate_distance():
     </html>
     """
 
+#Output Form 
 @app.route('/form_input', methods=['POST'])
 def form_input():
     category = request.form.get('category')

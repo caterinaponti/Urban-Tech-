@@ -45,7 +45,7 @@ def create_marker(coord, name, url=None, color=None):
 
 @app.route("/map")
 def display_map():
-    mapObj = folium.Map(location=[37.7797807,-122.4329079], zoom_start=15)
+    mapObj = folium.Map(location=[37.7730667,-122.4329479], zoom_start=15)
 
     # List of coordinates for markers
     marker_coordinates = [
@@ -66,7 +66,10 @@ def display_map():
         (37.7807178,-122.4390234, 'Shopping', 'https://www.yelp.com/biz/pearl-market-san-francisco'),
         (37.7791871,-122.4610244, 'Outdoors', 'https://sfrecpark.org/1000/Rossi-Playground-Picnic-Area'),
         (37.7791897,-122.4546622, 'Food', 'https://melsdrive-in.com/'),
-
+        (37.7750996,-122.4518923, 'Health', 'https://www.nmotionfitness.com/'),
+        (37.7794926,-122.4496188, 'Food', 'https://www.chipotle.com/'),
+        (37.7816458,-122.4566931, 'Health', 'https://www.walgreens.com/'),
+        (37.770159,-122.4536038, 'Education', 'https://sfpl.org/locations/park'),
     ]   
     walkable_marker_coordinates = [
         (37.776360, -122.449898, 'University of San Francisco'),
@@ -84,6 +87,10 @@ def display_map():
         (37.7807178,-122.4390234,'Pearl Market'),
         (37.7791871,-122.4610244, 'Rossi Park'),
         (37.7791897,-122.4546622, 'Mels Drive In'),
+        (37.7750996,-122.4518923, 'N Motion Fitness'),
+        (37.7794926,-122.4496188, 'Chipotle Mexican Grill'),
+        (37.7816458,-122.4566931, 'Walgreens Pharmacy'),
+        (37.770159,-122.4536038, 'Park Branch Library'),
     ]   
     sf_coords = (37.776360, -122.449898)
   
