@@ -4,6 +4,7 @@ DESCRIPTION: Our project is called The Golden State Project and it is named afte
 WHY: Our main goal is to promote the idea of sustainability by limiting the amount of carbon emissions by encouraging students to walk to their destinations. 
 
 HOW TO GET STARTED: 
+    
     Step 1: Clone the following respository on VScode 
     https://github.com/caterinaponti/Urban-Tech-.git
 
