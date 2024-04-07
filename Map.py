@@ -59,7 +59,14 @@ def display_map():
         (37.7738489,-122.4526904, 'Food', 'https://www.tripadvisor.com/Restaurants-g60713-zfn7222620-San_Francisco_California.html'),
         (37.7703713,-122.4483282, 'Outdoors', 'https://sfrecpark.org/facilities/facility/details/Buena-Vista-Park-155' ),
         (37.7690194,-122.4572928, 'Shopping', 'https://www.sfjapantown.org/japan-center-malls/'),
-        (37.7726187,-122.4602558, 'Outdoors', 'https://sfrecpark.org/770/Golden-Gate-Park')
+        (37.7726187,-122.4602558, 'Outdoors', 'https://sfrecpark.org/770/Golden-Gate-Park'),
+        (37.7762203,-122.4557959, 'Food', "https://www.sfvelorouge.com/"),
+        (37.774591,-122.4649513, 'Entertainment', 'https://www.voguemovies.com/'),
+        (37.7762726,-122.44138, 'Food', 'https://www.themillsf.com/'),
+        (37.7807178,-122.4390234, 'Shopping', 'https://www.yelp.com/biz/pearl-market-san-francisco'),
+        (37.7791871,-122.4610244, 'Outdoors', 'https://sfrecpark.org/1000/Rossi-Playground-Picnic-Area'),
+        (37.7791897,-122.4546622, 'Food', 'https://melsdrive-in.com/'),
+
     ]   
     walkable_marker_coordinates = [
         (37.776360, -122.449898, 'University of San Francisco'),
@@ -70,7 +77,13 @@ def display_map():
         (37.7738489,-122.4526904, 'Haight-Ashbury'),
         (37.7703713,-122.4483282, 'Buena Vista Park'),
         (37.7690194,-122.4572928, 'Japan Town'),
-        (37.7726187,-122.4602558, 'Golden Gate Park')
+        (37.7726187,-122.4602558, 'Golden Gate Park'),
+        (37.7762203,-122.4557959, 'Velo Rouge Cafe'),
+        (37.774591,-122.4649513, 'The Vogue Theater'),
+        (37.7762726,-122.44138, 'The Mill'),
+        (37.7807178,-122.4390234,'Pearl Market'),
+        (37.7791871,-122.4610244, 'Rossi Park'),
+        (37.7791897,-122.4546622, 'Mels Drive In'),
     ]   
     sf_coords = (37.776360, -122.449898)
   
