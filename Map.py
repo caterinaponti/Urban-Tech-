@@ -1,3 +1,4 @@
+#Import folium to display map and flask for webapp
 import folium
 from flask import Flask
 from math import radians, sin, cos, sqrt, atan2
@@ -7,9 +8,11 @@ app = Flask(__name__)
 app.debug = True
 
 def calculate_distance(coord1, coord2):
-
+    #Using Haversine formula to calculate the distance between two points on the Earth's surface 
+    #given their latitude and longitude coordinates
     R = 6371.0
 
+    #get lat and lon of the two coordinates
     lat1 = radians(coord1[0])
     lat2 = radians(coord2[0])
     lon1 = radians(coord1[1])
@@ -25,6 +28,7 @@ def calculate_distance(coord1, coord2):
     
     return distance
 
+#Calculate total walking time 
 def km_to_minutes(distance):
     walking_speed = 5.0 #average walking speed 
     time_hours = distance /walking_speed
@@ -34,11 +38,14 @@ def km_to_minutes(distance):
 
 def create_marker(coord, name, url=None, color=None):
     if color:
+        #Set color icon for USF 
         icon = folium.Icon(color=color)
         marker = folium.Marker(location=coord, tooltip=name, icon=icon)
     else:
+        #set normal marker (blue) for destinations arounf USF 
         marker = folium.Marker(location=coord, tooltip=name)
     if url:
+        #Add pop-up to show website of resource of the markers 
         popup = f'<a href="{url}" target="_blank">{name}</a>'
         marker.add_child(folium.Popup(popup))
     return marker
@@ -71,6 +78,8 @@ def display_map():
         (37.7816458,-122.4566931, 'Health', 'https://www.walgreens.com/'),
         (37.770159,-122.4536038, 'Education', 'https://sfpl.org/locations/park'),
     ]   
+
+    #Markers coordinate and names
     walkable_marker_coordinates = [
         (37.776360, -122.449898, 'University of San Francisco'),
         (37.775145,-122.4539253, 'St. Mary Helath Clinic'),
@@ -92,26 +101,31 @@ def display_map():
         (37.7816458,-122.4566931, 'Walgreens Pharmacy'),
         (37.770159,-122.4536038, 'Park Branch Library'),
     ]   
+
+    #USF coordinates
     sf_coords = (37.776360, -122.449898)
   
     
+    #Iterating through marker coordinates to create markers (green for USF, blue for resources)
     for coords in marker_coordinates:
         if coords[2] == 'University of San Francisco':
             create_marker(coords[:2], coords[2], coords[3], color='green').add_to(mapObj)
         else:
             create_marker(coords[:2], coords[2], coords[3]).add_to(mapObj)
 
+    #Iterate through walkable marker coordinates to add distance + time in minutes to get to destinations when user clicks on line
     for i in range(len(walkable_marker_coordinates)):
         coords = walkable_marker_coordinates[i][:2]
         distance = calculate_distance(sf_coords, coords[:2])
         time_minutes = km_to_minutes(distance)
 
+        #creating lines to highlight distance between USF and destinations
         folium.PolyLine(locations=[sf_coords, coords[:2]], color='blue', popup=f'Walking Time: {time_minutes:.2f} minutes').add_to(mapObj)
 
     mapObj.get_root().width = "1300px"
     mapObj.get_root().height = "650px"
 
-
+    #Save map object
     mapObj.save("san_francisco_map.html")
 
 if __name__ == "__main__":
