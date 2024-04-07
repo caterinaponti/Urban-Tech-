@@ -114,27 +114,18 @@
             margin: 0 auto;
         }
 
-        ol {
-            /* list-style: none;
-            padding: 1.5rem;
-            border: 0.1rem solid lightgrey; */
+        ul {
+            
             columns: 3; 
             column-gap: 4rem;
             column-rule: 0.2rem dotted lightgrey;
         } 
 
         li {
-            /* --y: calc(100% - 2rem); */
             display: grid;
             grid-template-columns: minmax(3.75em, auto) 1fr;
             gap: 0 0.5em;
-            /* break-inside: avoid;
-            page-break-inside: avoid; */
-            /* background: lightgrey; */
             color: rgb(236, 199, 168);
-            /* border-radius: 0.25rem; */
-            /* overflow: hidden; */
-            /* box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 0.17); */
         }
 
         li + li {
@@ -172,7 +163,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <ol>
+        <ul>
             <li>
                 <span>FOOD</span>
             </li>
@@ -200,7 +191,7 @@
             <li>
                 <span>OUTDOORS</span>
             </li>
-        </ol>
+        </ul>
         <!-- <img src="background.webp" style="width:600px;height:300px;"/> -->
 
     </div>
