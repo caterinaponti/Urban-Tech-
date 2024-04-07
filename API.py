@@ -55,6 +55,7 @@ def main():
     </html>
     """
 
+
 def calculate_distance():
     category = request.form.get('category')
     if category not in category_destinations:
