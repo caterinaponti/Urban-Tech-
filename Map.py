@@ -45,7 +45,7 @@ def create_marker(coord, name, url=None, color=None):
 
 @app.route("/map")
 def display_map():
-    mapObj = folium.Map(location=[37.7730667,-122.4329479], zoom_start=15)
+    mapObj = folium.Map(location=[37.7765757,-122.4531143], zoom_start=15)
 
     # List of coordinates for markers
     marker_coordinates = [
